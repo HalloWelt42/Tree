@@ -36,7 +36,7 @@ class Human
    * @param Human $child
    * @return $this
    */
-  public function add_children( Human $child ) : self {
+  public function add_child( Human $child ) : self {
     $this -> children[] = $child;
     return $this;
   }
