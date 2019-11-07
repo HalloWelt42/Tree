@@ -26,18 +26,18 @@ class Main
     $i = new Human(1000);
 
     // 1. Hierachieebene
-    $d->add_children($g);
-    $d->add_children($h);
-    $f->add_children($i);
+    $d->add_child($g);
+    $d->add_child($h);
+    $f->add_child($i);
 
     // 2. Hierachieebene
-    $b->add_children($d);
-    $b->add_children($e);
-    $c->add_children($f);
+    $b->add_child($d);
+    $b->add_child($e);
+    $c->add_child($f);
 
     // 3. Hierachieebene
-    $a->add_children($b);
-    $a->add_children($c);
+    $a->add_child($b);
+    $a->add_child($c);
 
     print_r($this->get_gehaelter($a));
 
